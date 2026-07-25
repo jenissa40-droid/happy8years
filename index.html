@@ -228,7 +228,141 @@ background:#ff2e74;
 
 document.getElementById("enter").onclick=function(){
 
-alert("Welcome Baby ❤️");
+document.querySelector(".container").innerHTML=`
+
+<h1>❤️ Boyfriend Verification</h1>
+
+<p>Before entering...</p>
+
+<p>Please verify your identity.</p>
+
+<br>
+
+<input id="name" placeholder="What's your name?" style="padding:15px;width:80%;max-width:350px;border-radius:30px;border:none;font-size:18px;text-align:center;">
+
+<br><br>
+
+<button onclick="verify()">Verify ❤️</button>
+
+`;
+
+}
+
+function verify(){
+
+let n=document.getElementById("name").value.toLowerCase();
+
+if(n=="anron"||n=="baby"){
+
+document.querySelector(".container").innerHTML=`
+
+<h1>Access Granted ❤️</h1>
+
+<p>✅ Handsome</p>
+
+<p>✅ Cute</p>
+
+<p>✅ Mine</p>
+
+<br>
+
+<button onclick="loveQuiz()">Continue ❤️</button>
+
+`;
+
+}
+
+else{
+
+alert("Hmm... You're not my handsome. 🤨");
+
+}
+
+}
+
+function loveQuiz(){
+
+document.querySelector(".container").innerHTML=`
+
+<h1>😂 Love Quiz</h1>
+
+<p><b>Who loves more?</b></p>
+
+<br>
+
+<button onclick="answer()">❤️ Me</button>
+
+<br><br>
+
+<button onclick="answer()">🤍 You</button>
+
+<br><br>
+
+<button onclick="answer()">🤝 Both</button>
+
+`;
+
+}
+
+function answer(){
+
+document.querySelector(".container").innerHTML=`
+
+<h1>😂 Wrong!</h1>
+
+<p>The correct answer is...</p>
+
+<h2 style="margin-top:20px;color:#ff9cc2;">❤️ ME 😌❤️</h2>
+
+<br>
+
+<button onclick="choice()">Next ➜</button>
+
+`;
+
+}
+
+function choice(){
+
+document.querySelector(".container").innerHTML=`
+
+<h1>⚽ One Question...</h1>
+
+<p>You can only save ONE.</p>
+
+<br>
+
+<button onclick="result('me')">❤️ Me</button>
+
+<br><br>
+
+<button onclick="result('football')">⚽ Football</button>
+
+<br><br>
+
+<button onclick="result('kfc')">🍗 KFC</button>
+
+`;
+
+}
+
+function result(x){
+
+let msg="";
+
+if(x=="me") msg="❤️ Correct choice. Relationship saved.";
+
+if(x=="football") msg="😂 Wrong answer... but CR7 is watching.";
+
+if(x=="kfc") msg="🍗 Really? Chicken over me? 😭";
+
+document.querySelector(".container").innerHTML=`
+
+<h1>${msg}</h1>
+
+<p>P.S. I know you'd secretly try to save all three. ❤️</p>
+
+`;
 
 }
 
