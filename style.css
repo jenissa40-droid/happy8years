@@ -1,76 +1,35 @@
-/* ===== Background ===== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:linear-gradient(to bottom,#071426,#102850,#183d72);
-    color:white;
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+<meta charset="UTF-8">
 
-/* ===== Welcome Card ===== */
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.container{
-    width:80%;
-    max-width:700px;
-    text-align:center;
-    padding:40px;
-    border-radius:30px;
+<title>8 Years. 1 Heart. Infinite Love ❤️</title>
 
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(12px);
+<link rel="stylesheet" href="style.css">
 
-    border:1px solid rgba(255,255,255,.2);
+</head>
 
-    box-shadow:0 0 35px rgba(255,255,255,.12);
-}
+<body>
 
-/* ===== Heading ===== */
+<div class="stars"></div>
 
-h1{
-    font-size:55px;
-    margin-bottom:20px;
-}
+<div class="container">
 
-p{
-    font-size:22px;
-    line-height:1.8;
-}
+<h1>🌙 8 Years. 1 Heart. Infinite Love.</h1>
 
-/* ===== Button ===== */
+<p>Welcome, Handsome ❤️</p>
 
-button{
+<p>I've been waiting for you...</p>
 
-    margin-top:25px;
+<button id="enterBtn">✨ Enter</button>
 
-    padding:16px 45px;
+</div>
 
-    border:none;
+<script src="script.js"></script>
 
-    border-radius:50px;
+</body>
 
-    font-size:20px;
-
-    background:#ff5b91;
-
-    color:white;
-
-    cursor:pointer;
-
-    transition:.4s;
-
-}
-
-button:hover{
-
-    transform:scale(1.08);
-
-    background:#ff2f73;
-
-    box-shadow:0 0 20px #ff5b91;
-
-}
+</html>
