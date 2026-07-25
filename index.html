@@ -362,6 +362,105 @@ document.querySelector(".container").innerHTML=`
 
 <p>P.S. I know you'd secretly try to save all three. ❤️</p>
 
+<br>
+
+<button onclick="dashboard()">Continue ➜</button>
+
+`;
+
+}
+
+function dashboard(){
+
+document.querySelector(".container").innerHTML=`
+
+<h1>📊 Relationship Dashboard</h1>
+
+<p>❤️ Together: <b>8 Years</b></p>
+
+<p>📞 Phone Calls: <b>5000+</b></p>
+
+<p>🎥 Video Calls: <b>1000+</b></p>
+
+<p>😂 "You're Muted": <b>Too many to count</b></p>
+
+<p>🌍 Distance: <b>India ➜ Ireland</b></p>
+
+<p>💋 Kisses Pending: <b>∞</b></p>
+
+<p>🤗 Hugs Pending: <b>Emergency Level</b></p>
+
+<p>❤️ Love Level: <b>Infinite</b></p>
+
+<br>
+
+<button onclick="loveLetter()">Next ❤️</button>
+
+`;
+
+}
+
+function loveLetter(){
+
+document.querySelector(".container").innerHTML=`
+
+<h1>💌 My Love...</h1>
+
+<p>
+Eight years ago, I never imagined someone so far away would become my home.
+</p>
+
+<p>
+Thank you for every call, every laugh, every "I miss you", every smile, and every moment you've stayed by my side.
+</p>
+
+<p>
+No matter how many miles separate us...
+I'd still choose you every single time.
+</p>
+
+<p><b>Happy 8th Anniversary, Baby. ❤️</b></p>
+
+<br>
+
+<button onclick="finale()">One Last Surprise 🎁</button>
+
+`;
+
+}
+
+function finale(){
+
+document.querySelector(".container").innerHTML=`
+
+<h1>🎉 Congratulations! 🎉</h1>
+
+<h2>❤️ 8 Years. 1 Heart. Infinite Love. ❤️</h2>
+
+<p>You have successfully completed:</p>
+
+<p><b>Lifetime Membership in Jenissa's Heart ❤️</b></p>
+
+<p>Forever yours... ❤️</p>
+
+`;
+
+}
+
+let msg="";
+
+if(x=="me") msg="❤️ Correct choice. Relationship saved.";
+
+if(x=="football") msg="😂 Wrong answer... but CR7 is watching.";
+
+if(x=="kfc") msg="🍗 Really? Chicken over me? 😭";
+
+document.querySelector(".container").innerHTML=`
+
+<h1>${msg}</h1>
+
+<p>P.S. I know you'd secretly try to save all three. ❤️</p>
+
 `;
 
 }
