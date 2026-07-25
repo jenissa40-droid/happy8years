@@ -1,35 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(to bottom,#071426,#15335e);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+color:white;
+}
 
-<meta charset="UTF-8">
+.container{
+width:85%;
+max-width:700px;
+padding:40px;
+text-align:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border-radius:30px;
+border:1px solid rgba(255,255,255,.2);
+box-shadow:0 0 30px rgba(255,255,255,.2);
+z-index:2;
+}
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+h1{
+font-size:52px;
+}
 
-<title>8 Years. 1 Heart. Infinite Love ❤️</title>
+p{
+font-size:22px;
+margin-top:15px;
+}
 
-<link rel="stylesheet" href="style.css">
+button{
+margin-top:30px;
+padding:16px 40px;
+border:none;
+border-radius:50px;
+background:#ff5b91;
+color:white;
+font-size:20px;
+cursor:pointer;
+transition:.3s;
+}
 
-</head>
+button:hover{
+transform:scale(1.08);
+background:#ff2d73;
+}
 
-<body>
-
-<div class="stars"></div>
-
-<div class="container">
-
-<h1>🌙 8 Years. 1 Heart. Infinite Love.</h1>
-
-<p>Welcome, Handsome ❤️</p>
-
-<p>I've been waiting for you...</p>
-
-<button id="enterBtn">✨ Enter</button>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(#ffd95c 1px,transparent 1px);
+background-size:120px 120px,180px 180px;
+opacity:.7;
+z-index:-1;
+}
