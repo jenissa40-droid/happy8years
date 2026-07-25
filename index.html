@@ -3,32 +3,236 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>8 Years. 1 Heart. Infinite Love ❤️</title>
+<title>🌙 8 Years. 1 Heart. Infinite Love.</title>
 
+<style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
+body{
 
-<link rel="stylesheet" href="style.css">
+background:linear-gradient(180deg,#050d1d,#0b1e44,#16366f);
+
+height:100vh;
+
+overflow:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+}
+
+.loading{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+animation:fadeOut 5s forwards;
+
+animation-delay:3s;
+
+background:#050d1d;
+
+z-index:999;
+
+}
+
+.bar{
+
+width:260px;
+
+height:18px;
+
+background:#23385d;
+
+border-radius:50px;
+
+overflow:hidden;
+
+margin-top:20px;
+
+}
+
+.progress{
+
+height:100%;
+
+width:0;
+
+background:#ff5d91;
+
+animation:load 3s forwards;
+
+}
+
+@keyframes load{
+
+to{
+
+width:100%;
+
+}
+
+}
+
+@keyframes fadeOut{
+
+to{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+}
+
+.container{
+
+opacity:0;
+
+animation:showPage 2s forwards;
+
+animation-delay:4s;
+
+text-align:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:40px;
+
+border-radius:30px;
+
+width:90%;
+
+max-width:700px;
+
+box-shadow:0 0 35px rgba(255,255,255,.15);
+
+}
+
+@keyframes showPage{
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+h1{
+
+font-size:52px;
+
+margin-bottom:20px;
+
+}
+
+p{
+
+font-size:22px;
+
+margin-top:18px;
+
+}
+
+button{
+
+margin-top:30px;
+
+padding:15px 45px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ff5d91;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+background:#ff2e74;
+
+}
+
+</style>
+
 </head>
 
 <body>
-<div class="stars"></div>
+
+<div class="loading">
+
+<h1>Loading...</h1>
+
+<div class="bar">
+
+<div class="progress"></div>
+
+</div>
+
+<p style="margin-top:30px;">Finding the cutest boyfriend... ❤️</p>
+
+<p>Found him. 🥹</p>
+
+</div>
 
 <div class="container">
 
 <h1>🌙 8 Years. 1 Heart. Infinite Love.</h1>
 
-<p>
-Welcome, Handsome ❤️
-</p>
+<p>Welcome, Handsome ❤️</p>
 
-<p>
-I've been waiting for you...
-</p>
+<p>I've been waiting for you...</p>
 
-<button>✨ Enter</button>
+<button id="enter">✨ Enter</button>
 
 </div>
-<script src="script.js"></script>
+
+<script>
+
+document.getElementById("enter").onclick=function(){
+
+alert("Welcome Baby ❤️");
+
+}
+
+</script>
+
 </body>
 </html>
