@@ -1,49 +1,76 @@
+/* ===== Background ===== */
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(to bottom,#071426,#0d2244,#162f63);
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to bottom,#071426,#102850,#183d72);
     color:white;
+    overflow:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
-    overflow:hidden;
-    text-align:center;
 }
+
+/* ===== Welcome Card ===== */
 
 .container{
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(12px);
-    border:1px solid rgba(255,255,255,0.15);
-    border-radius:25px;
-    padding:40px;
+    width:80%;
     max-width:700px;
-    box-shadow:0 0 30px rgba(255,255,255,0.15);
+    text-align:center;
+    padding:40px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:0 0 35px rgba(255,255,255,.12);
 }
 
+/* ===== Heading ===== */
+
 h1{
-    font-size:48px;
-    margin-bottom:15px;
+    font-size:55px;
+    margin-bottom:20px;
 }
 
 p{
     font-size:22px;
-    line-height:1.6;
+    line-height:1.8;
 }
 
+/* ===== Button ===== */
+
 button{
+
     margin-top:25px;
-    padding:15px 40px;
+
+    padding:16px 45px;
+
     border:none;
+
     border-radius:50px;
-    background:#ff5c8a;
-    color:white;
+
     font-size:20px;
+
+    background:#ff5b91;
+
+    color:white;
+
     cursor:pointer;
-    transition:.3s;
+
+    transition:.4s;
+
 }
 
 button:hover{
+
     transform:scale(1.08);
-    background:#ff2d6f;
+
+    background:#ff2f73;
+
+    box-shadow:0 0 20px #ff5b91;
+
 }
