@@ -189,7 +189,32 @@ transform:scale(1.08);
 background:#ff2e74;
 
 }
+.heart{
+position:fixed;
+bottom:-50px;
+font-size:22px;
+animation:floatUp 10s linear infinite;
+opacity:.7;
+pointer-events:none;
+}
 
+@keyframes floatUp{
+
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:0;
+}
+
+10%{
+opacity:.8;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
 </style>
 
 </head>
@@ -593,6 +618,7 @@ document.querySelector(".container").innerHTML=`
 }
 
 function end(){
+celebrate();
 
 document.querySelector(".container").innerHTML=`
 
@@ -666,6 +692,68 @@ document.querySelector(".container").innerHTML=`
 window.scrollTo(0,0);
 
 }
+setInterval(createHeart,800);
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(18+Math.random()*25)+"px";
+
+heart.style.animationDuration=(6+Math.random()*5)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},11000);
+function celebrate(){
+
+for(let i=0;i<80;i++){
+
+setTimeout(()=>{
+
+const c=document.createElement("div");
+
+c.innerHTML=["🎉","✨","❤️","💖"][Math.floor(Math.random()*4)];
+
+c.style.position="fixed";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.top="-30px";
+
+c.style.fontSize=(18+Math.random()*20)+"px";
+
+c.style.transition="4s linear";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+
+c.style.top="110vh";
+
+},50);
+
+setTimeout(()=>{
+
+c.remove();
+
+},4500);
+
+},i*60);
+
+}
+
+}
+
+
 </script>
 
 </body>
